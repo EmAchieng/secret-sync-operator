@@ -64,8 +64,14 @@ To ensure the project works correctly, you can run the tests provided in the `te
 
  3. **Run Tests Locally**:
    ```sh
-   ./tests/test.sh
+   ./test/test.sh
    ```
+
+3. **Make the script executable**:
+Ensure the script is executable by running the following command:
+  ```sh
+chmod +x test/test.sh
+```
 
 ## Contributing
 I welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
