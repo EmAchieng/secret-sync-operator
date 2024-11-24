@@ -24,10 +24,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundle install
+          sudo gem install bundler
+          bundle install --path vendor/bundle
       - name: Run Tests
-        run: ./tests/test.sh
+        run: ./test/test.sh
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -46,3 +46,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
