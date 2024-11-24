@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: your-docker-image
+  repository: bitnami/kubectl
   tag: latest
   pullPolicy: Always
 
