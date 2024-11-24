@@ -62,7 +62,7 @@ helm install my-secret-sync-operator my-repo/secret-sync-operator -f [values.yam
 
 To ensure the project works correctly, you can run the tests provided in the `tests` folder.
 
- **Run Tests Locally**:
+ 3. **Run Tests Locally**:
    ```sh
    ./tests/test.sh
    
