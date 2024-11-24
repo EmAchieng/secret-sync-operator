@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo gem install bundler
-          bundle install --path vendor/bundle
+          bundle config set path 'vendor/bundle'
+          bundle install
       - name: Run Tests
         run: ./test/test.sh
       - name: Build with Jekyll

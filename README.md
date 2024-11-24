@@ -66,9 +66,9 @@ To ensure the project works correctly, you can run the tests provided in the `te
    ```sh
    ./tests/test.sh
    ```
-   
+
 ## Contributing
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
+I welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
