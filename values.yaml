@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: your-docker-image
+  tag: latest
+  pullPolicy: Always
+
+gitRepo: "git@github.com:EmAchieng/secret-sync-operator.git"
+sopsFile: "/tmp/repo/secrets.enc.yaml"
+
+service:
+  type: ClusterIP
+
+persistence:
+  size: 1Gi
+
+serviceAccount:
+  create: true
+  name: ""
+  

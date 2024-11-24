@@ -1,0 +1,24 @@
+1. The Secret Synchronization Operator has been successfully installed.
+
+2. To verify that the operator is running, execute the following command:
+   kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ .Chart.Name }},app.kubernetes.io/instance={{ .Release.Name }}"
+
+3. To view the logs of the operator, execute the following command:
+   kubectl logs -l "app.kubernetes.io/name={{ .Chart.Name }},app.kubernetes.io/instance={{ .Release.Name }}" -n {{ .Release.Namespace }}
+
+4. To create a SecretSync custom resource, use the following example:
+   ```yaml
+   apiVersion: sync.example.com/v1
+   kind: SecretSync
+   metadata:
+     name: my-secretsync
+     namespace: default
+   spec:
+     gitRepo: "git@github.com:EmAchieng/secret-sync-operator.git"
+     sopsFile: "/tmp/repo/secrets.enc.yaml"
+
+5. Apply the SecretSync custom resource: kubectl apply -f secret-sync-operator.yaml
+
+6. To verify that the secret has been synchronized, execute the following command: kubectl get secret my-secret -n default
+
+For more information, visit the documentation at https://example.com/docs
