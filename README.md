@@ -65,6 +65,7 @@ To ensure the project works correctly, you can run the tests provided in the `te
  3. **Run Tests Locally**:
    ```sh
    ./tests/test.sh
+   ```
    
 ## Contributing
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
