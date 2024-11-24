@@ -57,6 +57,15 @@ Alternatively, a YAML file that specifies the values for the parameters can be p
 helm install my-secret-sync-operator my-repo/secret-sync-operator -f [values.yaml](http://_vscodecontentref_/0)
 
 ```
+
+## Testing
+
+To ensure the project works correctly, you can run the tests provided in the `tests` folder.
+
+ **Run Tests Locally**:
+   ```sh
+   ./tests/test.sh
+   
 ## Contributing
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
 
